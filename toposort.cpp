@@ -8,7 +8,7 @@ map<ll, ll>mp;
 vector<ll>ans;
 
 void toposort(int n){
-    queue<int>q;
+    queue<int>q;                   // use priority queue to make it sorted in ascending order
     for (int i = 1; i<=n; ++i) {
         if(mp[i]==0)    
             q.push(i);
